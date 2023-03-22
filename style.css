@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.h1 {
+    height: 80px;
+}
+
+.toutCentrer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humeur {
+    text-align: center;
+}
+
+.myButton {
+    margin: 10px 30px;
+    padding : 10px 50px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-sad {
+    background-color: rgb(73, 69, 69);
+    color: white;
+}
+
+.btn-happy {
+    background: #f7ff00; 
+    background: linear-gradient(to right, #db36a4, #f7ff00);
+    color: #5f0ef5;
+}
+
+.myBg1 , .myBg2 {
+    height: 200px;
+}
+
+.myBgTriste1 {
+    background-color: #808181 ;
+}
+
+.myBgTriste2 {
+    background-color: #c4c2c3;
+}
+
+.myBgHappy1 {
+    background-color: #da1678;
+}
+
+.myBgHappy2 {
+    background-color: #0ebff5;
+}
+
+.cache {
+    visibility:hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+#agrandiTitre {
+    font-size: 2rem;
+    color: #fd7404;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#sheep {
+    position: relative;
+/* nom de la future animation */
+    animation-name: mouton;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* petite animation  */
+@keyframes mouton {
+    0% {left: 20px;}
+    100% {right: 20px;}
+}

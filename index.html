@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation de jQuery</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CDN jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main>
+        <div class="h1">
+            <h1 class="titre">De quoi est <span id="grosTitre">capable jQuery</span> ?</h1>
+        </div>
+        <div class="humeur">
+            <h2>Etes-vous d'humeur :</h2>
+
+            <div>
+                <button class="myButton btn-sad" id="sad">Triste</button> <span>ou</span>
+                <button class="myButton btn-happy mb-3" id="happy">Joyeuse</button>
+            </div>
+            <p id="msg"></p>
+        </div>
+        
+        <div class="row ">
+            <div class="col-2 myBg1 myBgTriste1"></div>
+<!-- Rainbow -->
+            <div class="col-2 myBg2 myBgTriste2  toutCentrer">
+                <img id="rainbow" class="cache" src="img/rainbow.png" alt="petit arc-en-ciel">
+            </div>
+
+            <div class="col-2 myBg1 myBgTriste1"></div>
+<!-- Cliquez-moi -->
+            <div class="col-2 myBg2 myBgTriste2 toutCentrer">
+                <p id="agrandiTitre" class="cache" >Cliquez-moi</p>
+            </div>
+
+            <div class="col-2 myBg1 myBgTriste1"></div>
+<!-- Bad Boy -->
+            <div class="col-2 myBg2 myBgTriste2 toutCentrer flex-column">
+                <img id="badBoy" class="cache" src="img/badBoy.png" alt="tête de méchant"> <br>
+                <p id="textBadBoy" class="cache">Oups, c'est une erreur !! Double-clique pour le faire disparaître</p>
+            </div>
+        </div>
+        <div class="row">
+<!-- Hello Kitty -->
+            <div class="col-2 myBg2 myBgTriste2 toutCentrer">
+                <img id="coucou" src="img/coucou1.png" alt="petit bonhomme heureux">
+            </div>
+            <div class="col-2 myBg1 myBgTriste1"></div>
+<!-- Formulaire -->
+            <div class="col-2 myBg2 myBgTriste2 toutCentrer">
+                <form id="form" class="cache">
+                    <label class="lead" for="prenom">Tapez votre prénom :</label><br>
+                    <input type="text" id="prenom" name="prenom">
+                </form>
+            </div>
+            <div class="col-2 myBg1 myBgTriste1"></div>
+<!-- Petit mouton -->
+            <div class="col-2 myBg2 myBgTriste2 toutCentrer">
+                <a><img id="sheep" class="cache" src="img/sheep.png" alt="petit mouton mignon"></a>
+            </div>
+            <div class="col-2 myBg1 myBgTriste1"></div>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
